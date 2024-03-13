@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Lacarotte</title>
+
+        <link reel="stylsheet"  href="{% static '../reussi/reussi/css/test.css' %}">
+
+    </head>
+
+    <body>
+
+        <h1>notre panoplie</h1>
+
+        <h2> une balise de chiffre aleatoire: {{ chiffre_aleatoire }} </h2>
+        
+        {%  for nom in liste %}
+            <h3>catégorie: {{nom}}
+        {% endfor %}
+
+    </body>
+</html>
